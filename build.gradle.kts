@@ -55,7 +55,6 @@ idea {
 }
 
 intellij {
-    version = "2020.2"
     pluginName = "Arend"
     updateSinceUntilBuild = true
     instrumentCode = true
