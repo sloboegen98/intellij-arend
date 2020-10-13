@@ -8,15 +8,15 @@ import org.arend.ext.error.GeneralError
 import javax.swing.Icon
 
 object ArendIcons {
-    val AREND: Icon = IconLoader.getIcon("/icons/arend.svg")
-    val AREND_MODULE: Icon = AllIcons.Nodes.AnonymousClass
-    val AREND_FILE: Icon = IconLoader.getIcon("/icons/arend_file.svg")
-    val DIRECTORY: Icon = AllIcons.Nodes.Package
-    val LIBRARY_ICON: Icon = AllIcons.Nodes.PpLib
-    val YAML_KEY: Icon = AllIcons.Nodes.FieldPK
+    val AREND = IconLoader.getIcon("/icons/arend.svg")
+    val AREND_MODULE = AllIcons.Nodes.AnonymousClass
+    val AREND_FILE = IconLoader.getIcon("/icons/arend_file.svg")
+    val DIRECTORY = AllIcons.Nodes.Package
+    val LIBRARY_ICON = AllIcons.Nodes.PpLib
+    val YAML_KEY = AllIcons.Nodes.FieldPK
 
-    val RUN_CONFIGURATION: Icon = AllIcons.RunConfigurations.Application
-    val LIBRARY_CONFIG: Icon = AllIcons.General.GearPlain
+    val RUN_CONFIGURATION = AllIcons.RunConfigurations.Application
+    val LIBRARY_CONFIG = AllIcons.General.GearPlain
 
     val MESSAGES = AllIcons.Toolwindows.ToolWindowMessages
     val FILTER = AllIcons.General.Filter
@@ -25,23 +25,23 @@ object ArendIcons {
     val CANCEL = AllIcons.Actions.Back
     val CLOSE = AllIcons.Actions.Cancel
 
-    val SHOW_FIELDS_IMPL = IconLoader.getIcon("/icons/showFieldImpl.svg")
-    val SHOW_NON_IMPLEMENTED = IconLoader.getIcon("/icons/showNonImpl.svg")
-    val SHOW_IMPLICITS = IconLoader.getIcon("/icons/showImplicits.svg")
+    val SHOW_FIELDS_IMPL = IconLoader.getIcon("/icons/showFieldImpl.svg", javaClass)
+    val SHOW_NON_IMPLEMENTED = IconLoader.getIcon("/icons/showNonImpl.svg", javaClass)
+    val SHOW_IMPLICITS = IconLoader.getIcon("/icons/showImplicits.svg", javaClass)
     val SHOW_NORMALIZED = AllIcons.Debugger.EvaluateExpression
 
-    val MOVE_LEFT = IconLoader.getIcon("/icons/moveLeft.svg")
-    val MOVE_RIGHT = IconLoader.getIcon("/icons/moveRight.svg")
+    val MOVE_LEFT = IconLoader.getIcon("/icons/moveLeft.svg", javaClass)
+    val MOVE_RIGHT = IconLoader.getIcon("/icons/moveRight.svg", javaClass)
 
     // Source code elements
 
     val CLASS_DEFINITION = AllIcons.Nodes.Class
     val RECORD_DEFINITION = AllIcons.Nodes.Record
-    val CLASS_FIELD = IconLoader.getIcon("/icons/field.svg")
+    val CLASS_FIELD = IconLoader.getIcon("/icons/field.svg", javaClass)
     val IMPLEMENTATION = AllIcons.General.Show_to_implement
     val CLASS_INSTANCE = AllIcons.Nodes.Interface
-    val CONSTRUCTOR = IconLoader.getIcon("/icons/constructor.svg")
-    val DATA_DEFINITION = IconLoader.getIcon("/icons/dataStructure.svg")
+    val CONSTRUCTOR = IconLoader.getIcon("/icons/constructor.svg", javaClass)
+    val DATA_DEFINITION = IconLoader.getIcon("/icons/dataStructure.svg", javaClass)
     val FUNCTION_DEFINITION = AllIcons.Nodes.Function
     val MODULE_DEFINITION = AllIcons.Nodes.AbstractMethod
     val META_DEFINITION = AllIcons.Nodes.Method
@@ -51,7 +51,7 @@ object ArendIcons {
 
     val ERROR = AllIcons.RunConfigurations.ToolbarError
     val WARNING = AllIcons.RunConfigurations.ToolbarFailed
-    val GOAL = IconLoader.getIcon("/icons/goal.svg")
+    val GOAL = IconLoader.getIcon("/icons/goal.svg", javaClass)
     val INFO = AllIcons.General.NotificationInfo
 
     fun getErrorLevelIcon(level: GeneralError.Level) = when (level) {
